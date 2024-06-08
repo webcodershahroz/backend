@@ -18,7 +18,7 @@ app.use(cors())
 
 app.use(express.json())
 //socket messages io
-messageIO;
+// messageIO;
 //routes
 
 app.use('/auth', auth)
