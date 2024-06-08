@@ -5,6 +5,7 @@ const generateToken = require('../config/jwt');
 const bcrypt = require('bcryptjs')
 
 //Post API to register a new user
+
 router.post('/signup', async (req, res) => {
     try {
         const { name, email, password, pic } = req.body;

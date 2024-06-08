@@ -4,6 +4,7 @@ const connectToMongodb = require('./config/mongodb')
 const auth = require('./routes/userRoutes')
 const contact = require('./routes/contactsOfUserRoutes')
 const messages = require('./routes/MessagesRoutes')
+const simple = require('./routes/simple')
 const cors = require('cors')
 const app = express();
 const messageIO = require('./socket/messages')
@@ -21,6 +22,7 @@ connectToMongodb();
 //app
 //routes
 
+app.use('/', simple)
 app.use('/auth', auth)
 app.use('/user', contact)
 app.use('/messages', messages)
