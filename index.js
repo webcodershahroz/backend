@@ -7,18 +7,18 @@ const messages = require('./routes/MessagesRoutes')
 const cors = require('cors')
 const app = express();
 const messageIO = require('./socket/messages')
-const path = require('path');
 
-dotenv.config();
-//connecting to mongodb atlas
-connectToMongodb();
-//app
 app.use(cors())
 //to accept json value
 
 app.use(express.json())
 //socket messages io
-// messageIO;
+messageIO;
+
+dotenv.config();
+//connecting to mongodb atlas
+connectToMongodb();
+//app
 //routes
 
 app.use('/auth', auth)
