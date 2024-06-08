@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const dotenv = require('dotenv');
 const connectToMongodb = require('./config/mongodb')
 const auth = require('./routes/userRoutes')
@@ -26,7 +26,7 @@ app.use('/user', contact)
 app.use('/messages', messages)
 
 //server listening on port 2000
-const PORT = process.env.PORT || 8000
+const PORT = 8000
 app.listen(PORT, (req, res) => {
     console.log(`app is listenig on http://localhost:${PORT}`)
 })
