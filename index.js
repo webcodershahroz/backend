@@ -18,7 +18,7 @@ messageIO;
 
 dotenv.config();
 //connecting to mongodb atlas
-// connectToMongodb();
+connectToMongodb();
 //app
 //routes
 
