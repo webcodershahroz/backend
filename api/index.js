@@ -1,13 +1,13 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const connectToMongodb = require('./config/mongodb')
-const auth = require('./routes/userRoutes')
-const contact = require('./routes/contactsOfUserRoutes')
-const messages = require('./routes/MessagesRoutes')
-const simple = require('./routes/simple')
+const connectToMongodb = require('../config/mongodb')
+const auth = require('../routes/userRoutes')
+const contact = require('../routes/contactsOfUserRoutes')
+const messages = require('../routes/MessagesRoutes')
+const simple = require('../routes/simple')
 const cors = require('cors')
 const app = express();
-const messageIO = require('./socket/messages')
+const messageIO = require('../socket/messages')
 
 app.use(cors())
 //to accept json value
