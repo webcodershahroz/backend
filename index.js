@@ -28,7 +28,7 @@ app.use('/user', contact)
 app.use('/messages', messages)
 
 //server listening on port 2000
-const PORT = 2000
+const PORT = 5081
 app.listen(PORT, (req, res) => {
     console.log(`app is listenig on http://localhost:${PORT}`)
 })
